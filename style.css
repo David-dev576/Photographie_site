@@ -142,7 +142,7 @@ img{
 }
 
 .nom-entreprise>h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -470,7 +470,7 @@ textarea {
 
 .Galerie-content2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     /* gap: 10px; */
     width: 80%;
     overflow: hidden;
