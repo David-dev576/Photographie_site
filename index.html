@@ -1,98 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" />
 	<title>Mon site</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/premium.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 	<header>
 		<div class="content-header">
-			<img src="images/logo3.jpeg" alt="Logo">
+			<img src="assets/images/logo3.jpeg" alt="Logo">
 			<nav>
 				<ul>
-					<li><a href="mission.html" class="hover" target="_blank">Mission
-						</a></li>
-
-					<li> <a href="galerie.html" class="hover" target="_blank">Galerie
-							
-						</a></li>
-					<li><a href="apropos.html" class="hover" target="_blank">A propos
-							
-						</a></li>
-					<li><a href="services.html" class="hover" target="_blank">Services
-							
-						</a></li>
+					<li><a href="pages/mission.html">Mission</a></li>
+					<li><a href="pages/galerie.html">Gallery</a></li>
+					<li><a href="pages/apropos.html">About</a></li>
+					<li><a href="pages/services.html">Services</a></li>
+					<li><a href="pages/dashboard.html" style="color: var(--primary) !important;"><i class="fa-solid fa-chart-line" style="margin-right: 5px;"></i>Dashboard</a></li>
 				</ul>
 			</nav>
 			<div class="btn-nav">
+				<button id="theme-toggle" class="theme-toggle-btn" aria-label="Changer de thème">
+					<i class="fa-solid fa-moon"></i>
+				</button>
 				<div class="btn-nav1">
-					<a href="signin.html" class="btn-sing" target="_blank">Sign in</a>
+					<a href="pages/signin.html" class="btn-sing"><i class="fa-solid fa-user"
+							style="margin-right: 5px;"></i>Sign in</a>
 				</div>
 				<div class="btn-nav2">
-					<a href="contact.html" class="btn-contact" target="_blank">Contactez-nous</a>
+					<a href="pages/contact.html" class="btn-contact"><i class="fa-solid fa-paper-plane"
+							style="margin-right: 5px;"></i>Contact Us</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="section">
-		<div class="section-content">
+	<section class="section hero-bg" style="background-image: url('assets/images/gallerie9.jpg');">
+		<div class="hero-overlay"></div>
+		<div class="section-content hero-content">
 			<div class="nom-entreprise">
-				<h1>Photographie<br>job</h1>
-				<p>Bonjour et bienvenue chez PHOTOGRAPHIE JOB.Nous sommes une entreprise qui se charge de vous prendre
-					des
-					belles photos et vous faire du bien avec des images des bones qualites.Nous sommes passionnees par
-					la
-					vie photographique et ca nous rends tellement hereux et heureuse.Nous avons une equipe tres
-					talentieuse
-					en
-					prise des photos et meme des videos.Des photographes qui ne dors pas pour rendre nos clients heureux
-					et
-					heureuse, et meme rendre leurs journees inoubliable..</p>
-			</div>
-			<div class="image-photographe">
-				<img src="images/gallerie9.jpg" alt="image photographe">
+				<h1>Éclat Capture</h1>
+				<p>Hello and welcome to ÉCLAT CAPTURE. We are a professional team dedicated to capturing your most beautiful moments and bringing you joy through high-quality images. We are passionate about the art of photography, and it brings us immense happiness. We have a highly talented team for both photography and videography. Our photographers work tirelessly to make our clients happy and their special days truly unforgettable.</p>
 			</div>
 		</div>
 	</section>
 	<section class="accueil">
-		<div class="accueil-content">
-			<h1></h1>
-			<p>Bonjour et bienvenue chez PHOTOGRAPHIE JOB.Nous sommes une entreprise qui se charge de vous prendre des
-				belles photos et vous faire du bien avec des images des bones qualites.Nous sommes passionnees par la
-				vie photographique et ca nous rends tellement hereux et heureuse.Nous avons une equipe tres talentieuse
-				en
-				prise des photos et meme des videos.Des photographes qui ne dors pas pour rendre nos clients heureux et
-				heureuse, et meme rendre leurs journees inoubliable..</p><br><br>
-			<p>Nous esperons que vous apprecierez de faire la visite a PHOTOGRAPHIE JOB et vous decouvriez notre passion
-				pour la photographie notre passion,Merci d'avoir visiter notre site et nous sommes vraimment tres
-				joyeux(se) de vous voir passer.</p>
-			<div class="image-accueil">
-				<div>
-					<img src="images/gallerie11.jpg" alt="">
-				</div>
-				<div>
-					<img src="images/gallerie8.jpg" alt="">
-				</div>
-				<div>
-					<img src="images/gallerie7.jpg" alt="">
+		<div class="accueil-content premium-layout">
+			<div class="text-column">
+				<h2 class="section-title">Capturing <span class="highlight">Eternity</span></h2>
+				<p class="lead-text">Welcome to ÉCLAT CAPTURE. We are a passionate team of photographers and videographers dedicated to immortalizing your most precious moments with breathtaking quality and artistic vision.</p>
+				
+				<div class="features">
+					<div class="feature-item">
+						<i class="fa-solid fa-camera-retro"></i>
+						<div>
+							<h3>Artistic Excellence</h3>
+							<p>Every shot is meticulously crafted to tell your unique story with elegance and emotion.</p>
+						</div>
+					</div>
+					<div class="feature-item">
+						<i class="fa-solid fa-crown"></i>
+						<div>
+							<h3>The Royal Treatment</h3>
+							<p>For us, every client is royalty. Your satisfaction is not just our goal; it is our absolute promise.</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<p>Si non en parlant tres bien de notre entreprise PHOTOGRAPHIE JOB c'est une entreprise ou nous avons qu'un
-				seul silogan, chez nous les clients sont des rois et vraimment nous prespectons vraimmment ca, car c'est
-				lors notre grand devoir . Et aussi PHOTOGRAPHIE JOB ne faits pas seullement rendre nos reves reelles
-				mais aussi il est la pour faire toujours plaisire et vous service toujours
-				,mais alors qu'est ce que on ferras sans vous nos client ? sans vous nos clients je dirais que nous ne
-				sommes alors rien car sans vous rien ne marche et ca peut jamais marcher sans vous ,
-				alors faites vous plaisire de toujours venir chez nous et mous seront toujours content de vous recevoir
-				ca c'est une promesse de PHOTOGRAPHIE JOB.</p>
-
+			
+			<div class="image-collage">
+				<div class="collage-item img-1">
+					<img src="assets/images/gallerie11.jpg" alt="Photography 1">
+				</div>
+				<div class="collage-item img-2">
+					<img src="assets/images/gallerie8.jpg" alt="Photography 2">
+				</div>
+				<div class="collage-item img-3">
+					<img src="assets/images/gallerie7.jpg" alt="Photography 3">
+				</div>
+			</div>
 		</div>
 	</section>
-	 <footer>&copy;PHOTOGRAPHIE JOB 2025
-    <p>BIU-BST-P12-078-2024</p>
-   </footer>
+	<footer class="modern-footer">
+		<div class="footer-top">
+			<div class="footer-col brand-col">
+				<h2 class="footer-brand">Éclat<span class="highlight">Capture</span></h2>
+				<p>Immortalizing your most precious moments with breathtaking quality and artistic vision.</p>
+				<div class="social-icons">
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="pages/mission.html">Mission</a></li>
+					<li><a href="pages/galerie.html">Gallery</a></li>
+					<li><a href="pages/apropos.html">About Us</a></li>
+					<li><a href="pages/services.html">Services</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3>Our Services</h3>
+				<ul>
+					<li><a href="pages/services/mariage.html">Wedding Photography</a></li>
+					<li><a href="pages/services/famille.html">Family Portraits</a></li>
+					<li><a href="pages/services/voyage.html">Travel & Lifestyle</a></li>
+					<li><a href="pages/services/enfants.html">Kids & Newborns</a></li>
+				</ul>
+			</div>
+			<div class="footer-col contact-col">
+				<h3>Contact Us</h3>
+				<p><i class="fa-solid fa-location-dot"></i> Gihosha</p>
+				<p><i class="fa-solid fa-phone"></i> +257 72175129</p>
+				<p><i class="fa-solid fa-envelope"></i> david@eclatcapture.com</p>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 ÉCLAT CAPTURE. All rights reserved.</p>
+		</div>
+	</footer>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>

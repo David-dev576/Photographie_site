@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dashboard & Bookings - Éclat Capture</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/premium.css">
+	<link rel="stylesheet" href="../assets/css/dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+	<!-- Header Glassmorphism -->
+	<header>
+		<div class="content-header">
+			<a href="../index.html" class="brand-link" style="display: flex; align-items: center; gap: 8px; color: var(--text-title); text-decoration: none;">
+				<img src="../assets/images/logo3.jpeg" alt="Logo" style="width: 50px; border-radius: 50%;">
+				<span style="font-weight: 800; font-family: 'Outfit', sans-serif;">Éclat<span style="color: var(--primary);">Capture</span></span>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="mission.html">Mission</a></li>
+					<li><a href="galerie.html">Gallery</a></li>
+					<li><a href="apropos.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="dashboard.html" style="color: var(--primary) !important;"><i class="fa-solid fa-chart-line" style="margin-right: 5px;"></i>Dashboard</a></li>
+				</ul>
+			</nav>
+			<div class="btn-nav">
+				<button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+					<i class="fa-solid fa-moon"></i>
+				</button>
+				<div class="btn-nav1">
+					<a href="signin.html" class="btn-sing"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Sign in</a>
+				</div>
+				<div class="btn-nav2">
+					<a href="contact.html" class="btn-contact"><i class="fa-solid fa-paper-plane" style="margin-right: 5px;"></i>Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="dashboard-container">
+		<!-- Introduction Section -->
+		<div class="dashboard-header">
+			<h1>Client Space & Administration</h1>
+			<p>Explore our high-fidelity booking management system and interactive custom shoot planner.</p>
+		</div>
+
+		<!-- ==========================================
+             1. PREMIUM DATA TABLE INTERFACE
+             ========================================== -->
+		<section class="table-section">
+			<div class="section-header">
+				<div class="section-title-group">
+					<h2><i class="fa-solid fa-calendar-check"></i> Recent Bookings</h2>
+					<p>History of scheduled photography sessions for the current season.</p>
+				</div>
+				<!-- Interactive Filter Pills -->
+				<div class="filter-group">
+					<button class="filter-btn active">All</button>
+					<button class="filter-btn">Wedding</button>
+					<button class="filter-btn">Portrait</button>
+					<button class="filter-btn">Family</button>
+					<button class="filter-btn">Travel</button>
+				</div>
+			</div>
+
+			<div class="table-responsive">
+				<table class="premium-table">
+					<thead>
+						<tr>
+							<th>Client</th>
+							<th>Session Type</th>
+							<th>Date & Time</th>
+							<th>Status</th>
+							<th>Price</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Row 1: Wedding (Confirmed) -->
+						<tr>
+							<td>
+								<div class="client-profile">
+									<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Avatar Sophie" class="client-avatar">
+									<div class="client-info">
+										<span class="client-name">Sophie Laurent</span>
+										<span class="client-email">sophie.l@email.com</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="session-type">
+									<i class="fa-solid fa-ring"></i> Premium Wedding
+								</div>
+							</td>
+							<td>
+								<div class="booking-date">
+									<span>June 18, 2026</span>
+									<small><i class="fa-regular fa-clock"></i> 14:00 - 20:00</small>
+								</div>
+							</td>
+							<td>
+								<span class="badge badge-confirmed">Confirmed</span>
+							</td>
+							<td>
+								<span class="price-tag">1,200 $</span>
+							</td>
+							<td>
+								<div class="action-buttons">
+									<button class="action-btn view" title="View details"><i class="fa-solid fa-eye"></i></button>
+									<button class="action-btn edit" title="Edit"><i class="fa-solid fa-pen"></i></button>
+									<button class="action-btn delete" title="Cancel"><i class="fa-solid fa-trash"></i></button>
+								</div>
+							</td>
+						</tr>
+
+						<!-- Row 2: Portrait (Pending) -->
+						<tr>
+							<td>
+								<div class="client-profile">
+									<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Avatar Thomas" class="client-avatar">
+									<div class="client-info">
+										<span class="client-name">Thomas Dubois</span>
+										<span class="client-email">t.dubois@email.com</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="session-type">
+									<i class="fa-solid fa-camera-retro"></i> Studio Portrait
+								</div>
+							</td>
+							<td>
+								<div class="booking-date">
+									<span>June 24, 2026</span>
+									<small><i class="fa-regular fa-clock"></i> 10:00 - 12:00</small>
+								</div>
+							</td>
+							<td>
+								<span class="badge badge-pending">Pending</span>
+							</td>
+							<td>
+								<span class="price-tag">350 $</span>
+							</td>
+							<td>
+								<div class="action-buttons">
+									<button class="action-btn view" title="View details"><i class="fa-solid fa-eye"></i></button>
+									<button class="action-btn edit" title="Edit"><i class="fa-solid fa-pen"></i></button>
+									<button class="action-btn delete" title="Cancel"><i class="fa-solid fa-trash"></i></button>
+								</div>
+							</td>
+						</tr>
+
+						<!-- Row 3: Family (Completed) -->
+						<tr>
+							<td>
+								<div class="client-profile">
+									<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="Avatar Émilie" class="client-avatar">
+									<div class="client-info">
+										<span class="client-name">Émilie Martin</span>
+										<span class="client-email">emilie.m@email.com</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="session-type">
+									<i class="fa-solid fa-people-group"></i> Family & Outdoor
+								</div>
+							</td>
+							<td>
+								<div class="booking-date">
+									<span>May 12, 2026</span>
+									<small><i class="fa-regular fa-clock"></i> 15:30 - 17:30</small>
+								</div>
+							</td>
+							<td>
+								<span class="badge badge-completed">Completed</span>
+							</td>
+							<td>
+								<span class="price-tag">550 $</span>
+							</td>
+							<td>
+								<div class="action-buttons">
+									<button class="action-btn view" title="View details"><i class="fa-solid fa-eye"></i></button>
+									<button class="action-btn edit" title="Edit"><i class="fa-solid fa-pen"></i></button>
+									<button class="action-btn delete" title="Cancel"><i class="fa-solid fa-trash"></i></button>
+								</div>
+							</td>
+						</tr>
+
+						<!-- Row 4: Travel (Confirmed) -->
+						<tr>
+							<td>
+								<div class="client-profile">
+									<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Avatar Marc" class="client-avatar">
+									<div class="client-info">
+										<span class="client-name">Marc Antoine</span>
+										<span class="client-email">m.antoine@email.com</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="session-type">
+									<i class="fa-solid fa-route"></i> Travel & Lifestyle
+								</div>
+							</td>
+							<td>
+								<div class="booking-date">
+									<span>July 05, 2026</span>
+									<small><i class="fa-regular fa-clock"></i> 09:00 - 13:00</small>
+								</div>
+							</td>
+							<td>
+								<span class="badge badge-confirmed">Confirmed</span>
+							</td>
+							<td>
+								<span class="price-tag">850 $</span>
+							</td>
+							<td>
+								<div class="action-buttons">
+									<button class="action-btn view" title="View details"><i class="fa-solid fa-eye"></i></button>
+									<button class="action-btn edit" title="Edit"><i class="fa-solid fa-pen"></i></button>
+									<button class="action-btn delete" title="Cancel"><i class="fa-solid fa-trash"></i></button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Premium Pagination -->
+			<div class="pagination">
+				<span>Showing 1 to 4 of 12 bookings</span>
+				<div class="pagination-pages">
+					<a href="#" class="page-link active">1</a>
+					<a href="#" class="page-link">2</a>
+					<a href="#" class="page-link">3</a>
+					<a href="#" class="page-link"><i class="fa-solid fa-angle-right"></i></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================
+             2. PREMIUM SCHEDULER FORM INTERFACE
+             ========================================== -->
+		<section class="form-section">
+			<div class="section-header">
+				<div class="section-title-group">
+					<h2><i class="fa-solid fa-camera"></i> Schedule a Shoot</h2>
+					<p>Book your ideal time slot and customize your premium photography session.</p>
+				</div>
+			</div>
+
+			<form class="booking-form" onsubmit="event.preventDefault(); alert('Demo: Booking submitted successfully!');">
+				<!-- Field 1: Full Name -->
+				<div class="form-group">
+					<label for="full-name"><i class="fa-solid fa-user-circle"></i> Full Name</label>
+					<div class="input-wrapper">
+						<input type="text" id="full-name" class="form-input" placeholder="e.g. John Doe" required />
+						<i class="fa-solid fa-user input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 2: Email Address -->
+				<div class="form-group">
+					<label for="user-email"><i class="fa-solid fa-envelope-open"></i> Email Address</label>
+					<div class="input-wrapper">
+						<input type="email" id="user-email" class="form-input" placeholder="e.g. john.doe@email.com" required />
+						<i class="fa-solid fa-envelope input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 3: Phone Number -->
+				<div class="form-group">
+					<label for="user-phone"><i class="fa-solid fa-phone-volume"></i> Phone Number</label>
+					<div class="input-wrapper">
+						<input type="tel" id="user-phone" class="form-input" placeholder="e.g. +1 555-123-4567" required />
+						<i class="fa-solid fa-phone input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 4: Shoot Type -->
+				<div class="form-group">
+					<label for="session-select"><i class="fa-solid fa-sliders"></i> Shoot Type</label>
+					<div class="input-wrapper">
+						<select id="session-select" class="form-input" required>
+							<option value="" disabled selected>Select a style...</option>
+							<option value="mariage">Wedding & Events</option>
+							<option value="portrait">Professional Studio Portrait</option>
+							<option value="famille">Family & Newborns</option>
+							<option value="voyage">Travel & Lifestyle</option>
+						</select>
+						<i class="fa-solid fa-camera-retro input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 5: Desired Date -->
+				<div class="form-group">
+					<label for="session-date"><i class="fa-solid fa-calendar-day"></i> Desired Date</label>
+					<div class="input-wrapper">
+						<input type="date" id="session-date" class="form-input" required />
+						<i class="fa-solid fa-calendar input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 6: Start Time -->
+				<div class="form-group">
+					<label for="session-time"><i class="fa-solid fa-clock"></i> Start Time</label>
+					<div class="input-wrapper">
+						<input type="time" id="session-time" class="form-input" required />
+						<i class="fa-solid fa-clock input-icon"></i>
+					</div>
+				</div>
+
+				<!-- Field 7: Pricing Package Selection (Custom Radios) -->
+				<div class="form-group form-group-full">
+					<label><i class="fa-solid fa-gem"></i> Choose your Package</label>
+					<div class="pack-selection-group">
+						<!-- Pack 1: Classic -->
+						<label class="pack-card">
+							<input type="radio" name="pricing-pack" value="classic" checked />
+							<div class="pack-content-wrapper">
+								<div class="pack-title">Classic</div>
+								<div class="pack-price">350 $</div>
+								<div class="pack-desc">2 hours of shooting, 15 high-definition edited photos, private online gallery.</div>
+							</div>
+						</label>
+
+						<!-- Pack 2: Royal (Recommended) -->
+						<label class="pack-card">
+							<input type="radio" name="pricing-pack" value="royal" />
+							<div class="pack-content-wrapper">
+								<div class="pack-title">Royal</div>
+								<div class="pack-price">650 $</div>
+								<div class="pack-desc">4 hours of shooting, 35 edited photos, physical custom photo book included, 2 art prints.</div>
+							</div>
+						</label>
+
+						<!-- Pack 3: Imperial -->
+						<label class="pack-card">
+							<input type="radio" name="pricing-pack" value="imperial" />
+							<div class="pack-content-wrapper">
+								<div class="pack-title">Imperial</div>
+								<div class="pack-price">1,200 $</div>
+								<div class="pack-desc">Full day coverage, 80+ edited photos, wooden gift box USB key, 3-minute highlight video included.</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- Field 8: Special Instructions -->
+				<div class="form-group form-group-full">
+					<label for="session-notes"><i class="fa-solid fa-comment-dots"></i> Special Instructions & Project Details</label>
+					<textarea id="session-notes" class="form-textarea" placeholder="Share your ideas, desired location, inspirations, specific wishes..."></textarea>
+				</div>
+
+				<!-- Field 9: Terms Checkbox -->
+				<div class="form-group form-group-full" style="flex-direction: row; align-items: center;">
+					<label class="checkbox-container">
+						<input type="checkbox" required />
+						<span class="checkmark"></span>
+						I agree to let my details be processed to manage and organize my photography booking.
+					</label>
+				</div>
+
+				<!-- Form Actions -->
+				<div class="form-group form-group-full form-actions">
+					<button type="reset" class="form-btn btn-secondary">
+						<i class="fa-solid fa-arrow-rotate-left"></i> Reset
+					</button>
+					<button type="submit" class="form-btn btn-submit">
+						<i class="fa-solid fa-paper-plane"></i> Book Session
+					</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<!-- Footer modern -->
+	<footer class="modern-footer">
+		<div class="footer-top">
+			<div class="footer-col brand-col">
+				<h2 class="footer-brand">Éclat<span class="highlight">Capture</span></h2>
+				<p>Immortalizing your most precious moments with breathtaking quality and artistic vision.</p>
+				<div class="social-icons">
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="mission.html">Mission</a></li>
+					<li><a href="galerie.html">Gallery</a></li>
+					<li><a href="apropos.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3>Our Services</h3>
+				<ul>
+					<li><a href="services/mariage.html">Wedding Photography</a></li>
+					<li><a href="services/famille.html">Family Portraits</a></li>
+					<li><a href="services/voyage.html">Travel & Lifestyle</a></li>
+					<li><a href="services/enfants.html">Kids & Newborns</a></li>
+				</ul>
+			</div>
+			<div class="footer-col contact-col">
+				<h3>Contact Us</h3>
+				<p><i class="fa-solid fa-location-dot"></i> Gihosha</p>
+				<p><i class="fa-solid fa-phone"></i> +257 72175129</p>
+				<p><i class="fa-solid fa-envelope"></i> david@eclatcapture.com</p>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 ÉCLAT CAPTURE. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Script de bascule de thème persistent -->
+	<script src="../assets/js/main.js"></script>
+</body>
+
+</html>
